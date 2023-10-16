@@ -1,0 +1,110 @@
+body {
+
+    margin: 0;
+
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+header {
+
+    display: flex;
+
+    width: 100vw;
+
+    height: 10vh;
+
+    background-color: #114296;
+    
+}
+
+header p {
+
+    color: #ffffff;
+
+    display: inline-block;
+}
+
+ 
+.titulo {
+
+    color: #ffffff;
+
+    display: inline-block;
+
+    margin-left: 1%;
+     
+    display: flex;
+    
+    align-items: center;
+
+    justify-content: center;
+   
+
+}
+
+ 
+
+.logo {
+
+    height: 60%;
+
+    width: auto;
+
+}
+
+ 
+
+ 
+
+ 
+
+.navega {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100%;
+
+    width: 60%;
+
+    background-color: #114296;
+
+    margin-left: 4%;
+
+}
+
+ 
+
+.navega a {
+
+    margin-right: 10%;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: x-large;
+
+    font-weight: 1000;
+
+}
+
+ 
+
+ 
+
+ 
+
+.op-menu {
+
+    color: #ffffff;
+
+    display: inline-block;
+
+}
+

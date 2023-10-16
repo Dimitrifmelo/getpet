@@ -1,0 +1,37 @@
+
+.geral {
+
+    height: 100vh;
+
+    width: 20vw;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+    background-color: #f2f2f2; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+   
+}
+
+.geral input {
+background-color: azure;
+border-radius: 16px;
+width: 100%;
+}
+
+.geral form {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+.geral button {
+background-color: #0954f5;
+
+}
