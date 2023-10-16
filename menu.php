@@ -1,3 +1,16 @@
+<?php
+    
+    
+    if (isset($_SESSION['id'])) {
+        $id_user = $_SESSION['id']; 
+    }
+
+    require_once('conexao.php');
+    date_default_timezone_set('America/Sao_Paulo');
+
+    $database = new Database();
+    $db = $database->conectar();
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -32,14 +45,38 @@
                     <a href="#">Sobre Nós</a>
 
                     <a href="arearestrita.php">Area Restrita</a>
-
+                        
                     <a href="contato.php">Contato</a>
 
         </div>
 
-        <a href="login.php">Logar</a>
 
-        <a href="cadastro.php">Cadastrar</a>
+
+
+
+        <?php 
+            if (!isset($_SESSION['id'])) { 
+                
+
+        echo '<a class="logs" href="login.php">Logar</a>';
+        echo '<a  class="logs" href="cadastro.php">Cadastrar</a>';
+
+            }
+        ?> 
+        
+       
+
+
+
+
+
+
+
+
+
+
+
+
 
     </header>
 
