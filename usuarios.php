@@ -50,7 +50,7 @@ class usuario
 
         } else {
 
-            $sql = $this->pdo->prepare("INSERT INTO usuarios (nome, telefone, email, cpf, data_nascimento, senha) VALUES (:n, :t, :e, :c, :d, :s)");
+            $sql = $this->pdo->prepare("INSERT INTO usuarios (nome, telefone, email, cpf, senha) VALUES (:n, :t, :e, :c, :s)");
 
             $sql->bindValue(":n", $nome);
 
@@ -59,8 +59,6 @@ class usuario
             $sql->bindvalue(":e", $email);
 
             $sql->bindvalue(":c", $cpf);
-
-            $sql->bindvalue(":d", $data);
 
             $sql->bindValue(":s", sha1($senha));
 

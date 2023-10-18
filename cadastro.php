@@ -31,10 +31,18 @@ require_once 'conexao.php';
     
 
  
+<div class="cad">
+
+    <?php
+    echo "Faça seu cadastro";
+
+    ?>
+</div>
+
 
 <div class="geral">
 
-<form action="" method="post">
+    <form action="" method="post">
 
  
 
@@ -42,13 +50,12 @@ require_once 'conexao.php';
         <input type="number" name="telefone" placeholder="Telefone"> <br> <br>
         <input type="email" name="email" placeholder="E-mail"> <br> <br>
         <input type="number" name="cpf" placeholder="CPF"> <br><br>
-        <input type="date" name="data" placeholder="Data de Nascimento"> <br><br>
         <input type="senha" name="senha" placeholder="Crie Sua Senha">  <br><br>
 
         <button type="submit">Cadastrar</button>
  
 
-</form>
+    </form>
 
 
 
@@ -64,7 +71,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $telefone = $_POST["telefone"];
             $email = $_POST["email"];
             $cpf = $_POST["cpf"];
-            $data = $_POST["data"];
             $senha = $_POST["senha"];
 
  
